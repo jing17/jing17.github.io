@@ -311,14 +311,16 @@
       
         
           
-            <h3 id="Jenkins介绍"><a href="#Jenkins介绍" class="headerlink" title="Jenkins介绍"></a>Jenkins介绍</h3><p>Jenkins是一款开源 CI&amp;CD 软件，用于自动化各种任务，包括构建、测试和部署软件。<br>官网：<a href="http://jenkins-ci.org" target="_blank" rel="noopener">http://jenkins-ci.org</a></p>
-<h3 id="环境搭建与安装"><a href="#环境搭建与安装" class="headerlink" title="环境搭建与安装"></a>环境搭建与安装</h3><h3 id="常用插件"><a href="#常用插件" class="headerlink" title="常用插件"></a>常用插件</h3><h4 id="Build-User-Vars-Plugin"><a href="#Build-User-Vars-Plugin" class="headerlink" title="Build User Vars Plugin"></a>Build User Vars Plugin</h4><p><a href="https://wiki.jenkins.io/display/JENKINS/Build+User+Vars+Plugin" target="_blank" rel="noopener">Build User Vars Plugin</a>插件用于查看触发构建的用户的基本信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Linux</span><br><span class="line">echo &quot;$BUILD_USER&quot;</span><br><span class="line">echo &quot;$BUILD_USER_FIRST_NAME&quot;</span><br><span class="line">echo &quot;$BUILD_USER_LAST_NAME&quot;</span><br><span class="line">echo &quot;$BUILD_USER_ID&quot;</span><br><span class="line">echo &quot;BUILD_USER_EMAIL&quot;</span><br><span class="line"></span><br><span class="line"># windows</span><br><span class="line">echo &quot;echo %BUILD_USER%&quot;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://user-images.githubusercontent.com/9417895/61713782-f260cb80-ad8b-11e9-94c1-4d8946fea0b1.png" alt="Build User Vars Plugin"></p>
-<h3 id="项目实践（自由构建）"><a href="#项目实践（自由构建）" class="headerlink" title="项目实践（自由构建）"></a>项目实践（自由构建）</h3><h4 id="构建Java项目"><a href="#构建Java项目" class="headerlink" title="构建Java项目"></a>构建Java项目</h4><h4 id="构建前端项目"><a href="#构建前端项目" class="headerlink" title="构建前端项目"></a>构建前端项目</h4><h4 id="构建Python自动化测试项目"><a href="#构建Python自动化测试项目" class="headerlink" title="构建Python自动化测试项目"></a>构建Python自动化测试项目</h4><h4 id="构建Jmeter项目"><a href="#构建Jmeter项目" class="headerlink" title="构建Jmeter项目"></a>构建Jmeter项目</h4><h3 id="Pipeline流水线构建"><a href="#Pipeline流水线构建" class="headerlink" title="Pipeline流水线构建"></a>Pipeline流水线构建</h3><h3 id="分布式部署"><a href="#分布式部署" class="headerlink" title="分布式部署"></a>分布式部署</h3><h3 id="账户权限配置"><a href="#账户权限配置" class="headerlink" title="账户权限配置"></a>账户权限配置</h3><h3 id="Jenkins内置环境变量"><a href="#Jenkins内置环境变量" class="headerlink" title="Jenkins内置环境变量"></a>Jenkins内置环境变量</h3><p><a href="http://localhost:8080/env-vars.html/" target="_blank" rel="noopener">环境变量</a></p>
-<h3 id="Jenkins内置API"><a href="#Jenkins内置API" class="headerlink" title="Jenkins内置API"></a>Jenkins内置API</h3>
-          
+          Jenkins介绍Jenkins是一款开源 CI&amp;CD 软件，用于自动化各种任务，包括构建、测试和部署软件。官网：http://jenkins-ci.org
+环境搭建与安装常用插件Build User Vars PluginBuild User Vars Plugin插件用于查看触发构建的用
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/23/Jenkins介绍与实践/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -438,21 +440,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/21/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
